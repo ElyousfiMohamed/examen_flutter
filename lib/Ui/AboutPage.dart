@@ -15,7 +15,7 @@ class _AboutPageState extends State<AboutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("About me"),
+          title: const Text("About"),
           elevation: 0,
           centerTitle: true,),
         body: Center(
@@ -24,11 +24,11 @@ class _AboutPageState extends State<AboutPage> {
             child: Column (
               children: [
                 const CircleAvatar(
-                  backgroundImage: AssetImage("images/02-min.jpg"),
+                  backgroundImage: AssetImage("images/02-min.png"),
                   radius: 50,
                 ),
                 SizedBox(height: 10),
-                const Text("Mohamed ELYOUSFI"),
+                const Text("Bibliothéque publique BPI"),
                 const Divider(
                   height: 30,
                   thickness: 2,
@@ -39,14 +39,15 @@ class _AboutPageState extends State<AboutPage> {
                 Padding(
                   padding: EdgeInsets.all(25.0),
                   child: Container(
-                    child: const Text("Actuellement étudiant en deuxième année en Ingénierie Informatique - Big Data & Cloud Computing "
-                        "a l'ENSET Mohammedia.Titulaire d'un DUT en Administration Systèmes et Réseaux a l'ESTO (Metion Très Bien) "
-                        "en 2020,durant cette formation j'ai effectué quelques stages et expériences professionnelles (stage d'initiation "
-                        "a l'Office Cherifien des Phosphates khouribga d'une durée d'un mois et aussi un stage professionnel a l'Ecole Supérieure "
-                        "de Technologie oujda),j'ai eu mon baccalauréat par mention bien en Sciences Expérimentales en 2018.",
+                    child: const Text("Bibliothèque de lecture publique, la Bpi s’adresse à toute personne en "
+                        "recherche d’information ou en formation, que ce soit par motivation personnelle, "
+                        "professionnelle, scolaire ou universitaire.\n\nElle propose notamment des espaces de "
+                        "lecture et de travail, des collections encyclopédiques sur tous supports en consultation "
+                        "sur place, des activités culturelles organisées à l’intérieur du Centre Pompidou…"
+                        "\n\nLa Bibliothèque ne propose pas de prêt ni d’espace ou de collection dédiée aux enfants",
                       textAlign: TextAlign.justify,),
                   ),
-                )
+                ),
               ],
             ),
           ),

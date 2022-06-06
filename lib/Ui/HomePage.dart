@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width / 1.5,
                                       child: FittedBox(
                                           fit: BoxFit.contain,
-                                          child: Text("Title",
+                                          child: Text("Bpi",
                                               style: TextStyle(
                                                   color: Colors.black,
                                                   fontWeight: FontWeight.w600)))),
@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                                       child: FittedBox(
                                         fit: BoxFit.contain,
                                         child: Text.rich(TextSpan(
-                                            text: "SubTitle",
+                                            text: "Your library",
                                             style: TextStyle(
                                                 color: Colors.black,
                                                 fontSize: 67,
@@ -83,10 +83,21 @@ class HomePage extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16.0),
                           child: Text(
-                              "description description description description description description description description",
+                              "C'est une application pour la gestion des livres et des adhérents, permettra de visualiser la liste des livres et des adhérents disponibles dans la bibliothèque, de supprimer des livres et des adhérents et finalement de pouvoir rechercher des livres",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   color: Colors.black,
+                                  fontWeight: FontWeight.w900)),
+                        ),
+                      ),Container(
+                        child: const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Text(
+                              "Made By : ELYOUSFI Mohamed",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 22,
                                   fontWeight: FontWeight.w900)),
                         ),
                       ),
@@ -100,7 +111,7 @@ class HomePage extends StatelessWidget {
                               textColor: Colors.white,
                               color: Colors.lightGreen,
                               onPressed: () {
-                                Navigator.pushNamed(context, "/about");
+                                Navigator.pushNamed(context, "/livres");
                               },
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(4.0),

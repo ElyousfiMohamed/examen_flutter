@@ -16,15 +16,17 @@ class appDrawer extends StatelessWidget {
               child: DrawerHeader(child: Column(
                 children: const [
                   CircleAvatar(
-                    backgroundImage: AssetImage("images/02-min.jpg"),
+                    backgroundImage: AssetImage("images/02-min.png"),
                     radius: 40,
                   ),
                   SizedBox(height: 10),
-                  Text("Mohamed ELYOUSFI"),
+                  Text("Bibliothéque publique"),
                 ],
               )),
             ),
             DrawerItem("Home","/",const Icon(Icons.home,color: Colors.lightGreen,)),
+            DrawerItem("Livres","/livres",const Icon(Icons.book,color: Colors.lightGreen,)),
+            DrawerItem("Adherents","/adherents",const Icon(Icons.person,color: Colors.lightGreen,)),
             DrawerItem("About","/about",const Icon(Icons.error,color: Colors.lightGreen)),
           ],
         ),
