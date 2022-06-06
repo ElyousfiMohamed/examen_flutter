@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             "/": (context) => HomePage(),
             "/about": (context) => AboutPage(),
           },
-          initialRoute: "/contacts",
+          initialRoute: "/",
         )
     );
   }
