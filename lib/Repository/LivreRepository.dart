@@ -58,7 +58,7 @@ class LivreRepository {
   }
 
   // get livre by keyword  (titre)
-  Future<List<Livre>> getLivreByKeyword(String keyword) async {
+  Future<List<Livre>> getLivresByKeyword(String keyword) async {
     var future = await Future.delayed(const Duration(seconds: 1));
     int rand = Random().nextInt(10);
     if( rand>8) {
@@ -68,14 +68,14 @@ class LivreRepository {
   }
 
   //delete livre by id
-  Future<bool> deleteLivreById(int id) async {
+  Future<List<Livre>> deleteLivreById(int id) async {
     var future = await Future.delayed(const Duration(seconds: 1));
     int rand = Random().nextInt(10);
     if( rand>8) {
       throw Exception("ERROR !");
     }
     livres.removeWhere((livre) => livre.id == id);
-    return true;
+    return livres;
   }
 
 

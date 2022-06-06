@@ -41,12 +41,13 @@ class AdherentRepository {
   }
 
   // delete adherent by id
-  Future<bool> deleteAdherent(int id) async {
+  Future<List<Adherent>> deleteAdherent(int id) async {
     var future = await Future.delayed(const Duration(seconds: 1));
     int rand = Random().nextInt(10);
     if (rand > 8) {
       throw Exception("ERROR !");
     }
-    return true;
+    adherents.removeWhere((element) => element.id == id);
+    return adherents;
   }
 }
